@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="../css/chopcar.css">
+		<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+		<script src="../libs/jquery/jquery-3.2.1.js"></script>
+		<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-default navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/shop-project">京西商城后台管理系统</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="../index.html">首页<span class="sr-only">(current)</span></a></li>
+						<li><a href="shopcar.html">购物车</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right before-sign">
+						<li><a href="html/login.html">登录</a></li>
+						<li><a href="html/register.html">注册</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right signin" id="signin">
+						<li><a href="html/login.html">欢迎您<span id="welcome"></span></a></li>
+						<li><a href="javascript:;" id="signout">退出</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class="shopcar">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>全选<input type="checkbox"></th>
+						<th>商品名称</th>
+						<th>商品价格</th>
+						<th>商品件数</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td><input type="checkbox"></td>
+						<td>鼠标</td>
+						<td>233</td>
+						<td>
+							<a class="btn btn-default" href="javascript:;" role="button">+</a>
+							<span>11</span>
+							<a class="btn btn-default" href="javaacript:;" role="button">-</a>
+						</td>
+						<td><button class="btn btn-info" type="submit">取消订单</button></td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script src="../libs/tools.js"></script>
+	<script src="../js/shopcar.js"></script>
+</html>
